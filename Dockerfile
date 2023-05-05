@@ -12,7 +12,7 @@ RUN git pull
 
 RUN ./emsdk install latest && \
     ./emsdk activate latest && \
-    echo "source /emsdk/emsdk_env.sh" >> ~/.bashrc && \
+    echo "export EMSDK_QUIET=1\nsource /emsdk/emsdk_env.sh" >> ~/.bashrc && \
     source ~/.bashrc
 
 COPY entry.sh /entry.sh
