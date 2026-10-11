@@ -1,3 +1,3 @@
-FROM docker.tangerie.xyz/docker-emsdk:latest
+FROM ghcr.io/tangerieorg/docker-emsdk:latest
 
 RUN emcc -v
